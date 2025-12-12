@@ -17,6 +17,9 @@ dependencies = [
     "toml",
     "tomli-w",
     "jupyterlab>=4.5.0",
+    "numpy>=2.3.5",
+    "matplotlib>=3.10.8",
+    "pynapple>=0.10.2",
 ]
 
 
