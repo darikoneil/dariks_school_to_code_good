@@ -1,11 +1,15 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from matplotlib.ticker import AutoMinorLocator
+from pathlib import Path
 
+_RED = (197/255, 89/255, 94/255)
+_BLUE = (72/255, 136/255, 170/255)
 
-
-def plot_data(
+def plot_neuron(
         timestamps: np.ndarray,
         data: np.ndarray,
+        neuron: str | int  = "0",
         time_units: str = "a.u.",
 ) -> None:
     """
@@ -15,13 +19,30 @@ def plot_data(
     :param data: A numpy array of data values corresponding to the timestamps.
     :param time_units: A string representing the units of time for the x-axis.
     """
-    plt.figure(figsize=(10, 5))
-    plt.plot(timestamps, data, marker='o', linestyle='-')
-    plt.xlabel(f'Time ({time_units})')
-    plt.ylabel('Data Values')
-    plt.title('Data vs Time')
-    plt.grid(True)
-    plt.show()
+    fig, ax = plt.subplots(1, 1, figsize=(5, 3))
+    ax.plot(timestamps, data, color=_BLUE, lw=1.5, label="Neuron 0")
+    ax.set_xlabel(f'Time ({time_units})')
+    ax.set_ylabel('Calcium Signal (a.u.)')
+    ax.set_title(f'Neuron {neuron}')
+    ax.xaxis.set_major_locator(plt.MultipleLocator(10))
+    ax.xaxis.set_minor_locator(AutoMinorLocator(2))
+    ax.yaxis.set_major_locator(plt.MultipleLocator(0.25))
+    ax.yaxis.set_minor_locator(AutoMinorLocator(2))
+    max_stamp =np.ceil(timestamps.max())
+    x_bounds = (0, max_stamp)
+    x_lim = (-0.025 * max_stamp, max_stamp)
+    ax.set_xlim(*x_lim)
+    ax.spines["bottom"].set_bounds(*x_bounds)
+    step = 0.25
+    rounded_peak = np.ceil(data.max()/step)*step
+    y_bounds = (0, rounded_peak)
+    y_lim = (-0.025 * rounded_peak, rounded_peak)
+    ax.set_ylim(*y_lim)
+    ax.spines["left"].set_bounds(*y_bounds)
+    ax.grid(visible=False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["top"].set_visible(False)
+
 
 
 def _spikes_to_traces(
@@ -66,64 +87,20 @@ def simulate_calcium_data(
     :return: A numpy array of shape (num_neurons, num_frames) representing the simulated calcium data.
     """
 
-    timestamps = np.arange(0, duration, 1/frame_rate)
+    timestamps = np.arange(1/frame_rate, duration + 1/frame_rate, 1/frame_rate)
     spikes = np.random.poisson(1e-2, (len(timestamps), num_neurons))
     calcium_data = _spikes_to_traces(spikes, tau, 1/frame_rate)
     return np.hstack([timestamps.reshape(-1, 1), calcium_data])
 
 
-# def simulate_raw_calcium(
-#     X: int,
-#     T: int,
-#     dt: float = 1/30,                 # seconds per frame
-#     rate_hz: tuple[float, float] = (0.02, 1.0),
-#     tau_rise: float = 0.06,           # s
-#     tau_decay: float = 0.7,           # s
-#     amp: tuple[float, float] = (0.6, 2.0),
-#     shared_event_rate_hz: float = 0.15,
-#     shared_event_gain: tuple[float, float] = (0.0, 2.0),
-#     seed: int = 0,
-# ) -> tuple[np.ndarray, np.ndarray]:
-#     """
-#     Returns:
-#       time_s: (T,) timestamps in seconds
-#       calcium: (X, T) raw (latent) calcium traces (a.u.)
-#     """
-#     rng = np.random.default_rng(seed)
-#     time_s = np.arange(T, dtype=np.float32) * np.float32(dt)
-#
-#     # baseline firing rates and shared event gains
-#     rates = rng.uniform(*rate_hz, size=X).astype(np.float32)
-#     gains = rng.uniform(*shared_event_gain, size=X).astype(np.float32)
-#
-#     # shared population events
-#     shared_events = (rng.random(T) < (shared_event_rate_hz * dt)).astype(np.float32)  # (T,)
-#     shared_hazard = gains[:, None] * shared_events[None, :]                            # (X,T)
-#
-#     # spikes per frame (Bernoulli approx to Poisson)
-#     base_spikes = rng.random((X, T)) < (rates[:, None] * dt)
-#     shared_spikes = rng.random((X, T)) < np.clip(shared_hazard * dt, 0.0, 0.95)
-#     spikes = (base_spikes | shared_spikes).astype(np.float32)
-#
-#     # calcium dynamics: difference-of-exponentials via two IIR filters
-#     alpha_r = float(np.exp(-dt / max(tau_rise, 1e-6)))
-#     alpha_d = float(np.exp(-dt / max(tau_decay, 1e-6)))
-#
-#     r = np.zeros((X, T), dtype=np.float32)
-#     c = np.zeros((X, T), dtype=np.float32)
-#
-#     for t in range(1, T):
-#         r[:, t] = alpha_r * r[:, t - 1] + spikes[:, t]
-#         c[:, t] = alpha_d * c[:, t - 1] + (1 - alpha_r) * r[:, t]
-#
-#     # per-neuron amplitude scaling
-#     a = rng.uniform(*amp, size=X).astype(np.float32)
-#     calcium = (a[:, None] * c).astype(np.float32)
-#
-#     return time_s, calcium
-#
-#
-# # Example
-# if __name__ == "__main__":
-#     time_s, calcium = simulate_raw_calcium(X=100, T=3000, dt=1/30, seed=1)
-#     print(time_s.shape, calcium.shape)
+if __name__ == "__main__":
+    num_neurons = 10
+    duration = 60  # seconds
+    frame_rate = 30  # Hz
+
+    simulated_data = simulate_calcium_data(num_neurons, duration, frame_rate)
+
+    timestamps = simulated_data[:, 0]
+    data = simulated_data[:, 1]
+
+    np.save(Path("simulated_calcium_data.npy"), simulated_data)
