@@ -4,21 +4,18 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
-    "coverage[toml]",
-    "pydantic",
-    "pytest",
-    "pytest-sugar",
-    "pytest-clarity",
-    "ruff",
-    "sphinx",
-    "autodoc_pydantic",
-    "sphinx-autodoc-typehints",
-    "sphinx-rtd-theme",
-    "toml",
-    "tomli-w",
     "jupyterlab>=4.5.0",
     "numpy>=2.3.5",
     "matplotlib>=3.10.8",
+    "griffe_pydantic",
+    "griffe-inherited-docstrings",
+    "griffe_sphinx",
+    "griffe-autodocstringstyle",
+    "pymdown-extensions>=10.19.1",
+    "mkdocs-material>=9.7.1",
+    "mkdocstrings[python]>=1.0.0",
+    "mkdocs-api-autonav",
+    "click<=8.2.1", # necessary for proper mkdocs-material auto-reloading, see issue 4065/4058
 ]
 
 
