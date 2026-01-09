@@ -1,5 +1,5 @@
 # File: mkdocs.yml
-site_name: Darik's School to Code Good
+site_name: dariks_school_to_code_good
 docs_dir: docs
 theme:
   name: material
