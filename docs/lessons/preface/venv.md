@@ -15,19 +15,21 @@ update, and manage the libraries your project depends on.
 
 ## Python
 Popular tools for managing virtual environments in Python include:
+
 - **venv**: A built-in module that comes with Python 3. It allows you to create 
     lightweight virtual environments. It is usually paired with the `pip` package 
     manager that comes bundled with Python.
-- **pipx**: A tool to help you install and run Python applications in isolated 
-  environments. Usually paired with `poetry` package manager.
-- **conda**: A cross-platform package manager that also manages virtual environments.
-  It is popular in data science and scientific computing communities, and for the 
-  sudden changes to the academic and non-profit licensing of their user interface 
-  *Anaconda* in 2024 (alongside unexpected legal threats to institutions that 
-  continued  to use it). A command-line only implementation *miniconda* remains 
-  free. Conda manages both packages and environments for multiple programming languages.
-- **uv**: An extremely fast, modern tool made by Astral. It is designed to be simple 
-  to be simple to use and easy to integrate into existing workflows.
+  - **pipx**: A tool to help you install and run Python applications in isolated 
+    environments. Usually paired with `poetry` package manager.
+  - **conda**: A cross-platform package manager that also manages virtual environments.
+    It is popular in data science and scientific computing communities, and for the 
+    sudden changes to the academic and non-profit licensing of their user interface 
+    *Anaconda* in 2024 (alongside unexpected legal threats to institutions that 
+    continued  to use it). A command-line only implementation *miniconda* remains 
+    free. Conda manages both packages and environments for multiple programming  
+    languages.
+  - **uv**: An extremely fast, modern tool made by Astral. It is designed to be simple 
+    to use and easy to integrate into existing workflows.
 
 !!! note
 

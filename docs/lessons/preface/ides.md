@@ -13,6 +13,7 @@ code completion, syntax highlighting, static analysis, and version control integ
 ## Python
 
 Popular IDEs for python development include:
+
    1. **VS Code**: A lightweight, open-source IDE developed by Microsoft 
     that supports a wide range of programming languages through extensions.
    2. **Visual Studio**: A full-featured IDE also developed by Microsoft, 
