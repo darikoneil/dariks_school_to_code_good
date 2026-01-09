@@ -71,6 +71,9 @@ nav:
 theme:
   name: material
   custom_dir: overrides
+  icon:
+    admonition:
+      abstract: material/lightbulb-on
   features:
     - header.autohide
 #    - navigation.sections
@@ -104,12 +107,13 @@ plugins:
   - tags
 
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
+  - def_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - css/custom.css
