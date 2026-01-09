@@ -14,7 +14,7 @@ nav:
         - Introduction:
             - What is Programming?: lessons/introduction/what_is_programming.md
             - Programming Matters: lessons/introduction/programming_matters.md
-            - Languages: lessons/introduction/languages_overview.md
+            - Languages: lessons/introduction/languages.md
         - Data Types:
             - Fundamentals: lessons/1_data_types/fundamentals.md
             - Numerics: lessons/1_data_types/numerics.md
@@ -72,7 +72,6 @@ nav:
 
 theme:
   name: material
-  custom_dir: overrides
   icon:
     admonition:
       abstract: material/lightbulb-on
@@ -82,6 +81,7 @@ theme:
     - navigation.indexes
     - navigation.footer
     - toc.integrate
+    - content.tabs.link
   font:
     text: Lexend
     code: Fira Mono
@@ -110,6 +110,7 @@ plugins:
 
 markdown_extensions:
   - def_list
+  - attr_list
   - admonition
   - pymdownx.tabbed:
         alternate_style: true
