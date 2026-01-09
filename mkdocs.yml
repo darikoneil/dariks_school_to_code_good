@@ -7,12 +7,14 @@ site_author: Darik A. O'Neil
 nav:
     - Home: index.md
     - Chapters:
+        - Preface:
+            IDEs: lessons/preface/ides.md
+            Virtual Environments: lessons/preface/venv.md
+            Documentation: lessons/preface/docs.md
         - Introduction:
-            - What is Programming?: lessons/0_introduction/what_is_programming.md
-            - Programming Matters: lessons/0_introduction/programming_matters.md
-            - Languages: lessons/0_introduction/languages_overview.md
-            - IDEs: lessons/0_introduction/ides.md
-            - Documentation: lessons/0_introduction/documentation.md
+            - What is Programming?: lessons/introduction/what_is_programming.md
+            - Programming Matters: lessons/introduction/programming_matters.md
+            - Languages: lessons/introduction/languages_overview.md
         - Data Types:
             - Fundamentals: lessons/1_data_types/fundamentals.md
             - Numerics: lessons/1_data_types/numerics.md
@@ -71,6 +73,9 @@ nav:
 theme:
   name: material
   custom_dir: overrides
+  icon:
+    admonition:
+      abstract: material/lightbulb-on
   features:
     - header.autohide
 #    - navigation.sections
@@ -104,12 +109,15 @@ plugins:
   - tags
 
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
+  - def_list
   - admonition
+  - pymdownx.tabbed:
+        alternate_style: true
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - css/custom.css
