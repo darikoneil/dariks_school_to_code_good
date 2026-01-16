@@ -1,0 +1,75 @@
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: rgb(0, 0, 0);
+    --md-accent-fg-color: rgba(244, 154, 95, 1);
+    --md-code-hl-number-color: #c5595e;
+    --md-code-hl-string-color: #c5595e;
+    --md-category-headings-color: #000000;
+    --md-doc-heading-color: #000000;
+    --md-doc-heading-bg-color: rgba(161, 215, 255, 0.75);
+    --md-doc-heading-fm: #000000;
+    --md-doc-heading-p: #000000;
+    --md-doc-desc-color: #000000;
+    --md-section-title-color: #000000;
+    --md-section-desc-color: #000000;
+    --md-inline-code-color: #000000;
+    --md-code-bg-color: transparent;
+    --md-admon-code-bg-color: rgba(228, 228, 228, 0.50);
+    --md-default-value-color: #c5595e;
+    --md-heading-bottom-border-color: #000000;
+    --md-heading-main-bottom-border-color: #000000;
+    --md-heading-main-color: #000000;
+    --md-abstract-bg-color: rgba(161, 215, 255, 0.75);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: rgb(255, 255, 255);
+    --md-accent-fg-color: rgba(244, 154, 95, 1);
+    /*--md-code-hl-number-color: #c5595e;*/
+    /*--md-code-hl-string-color: #c5595e;*/
+    /*--md-category-headings-color: #000000;*/
+    /*--md-doc-heading-color: #000000;*/
+    /*--md-doc-heading-bg-color: rgba(161, 215, 255, 0.75);*/
+    /*--md-doc-heading-fm: #000000;*/
+    /*--md-doc-heading-p: #000000;*/
+    /*--md-doc-desc-color: #000000;*/
+    /*--md-section-title-color: #000000;*/
+    /*--md-section-desc-color: #000000;*/
+    /*--md-inline-code-color: #000000;*/
+    /*--md-code-bg-color: transparent;*/
+    /*--md-admon-code-bg-color: rgba(228, 228, 228, 0.50);*/
+    /*--md-default-value-color: #c5595e;*/
+    /*--md-heading-bottom-border-color: #000000;*/
+    /*    --md-heading-main-bottom-border-color: #000000;*/
+    /*    --md-heading-main-color: #000000;*/
+}
+
+.md-content h1:first-of-type {
+    margin-bottom: 0.5em; /* decrease the space (default is usually 1em or less) */
+}
+
+
+.md-typeset h1 {
+    border-bottom-style: solid;
+    border-bottom-color: var(--md-heading-main-bottom-border-color);
+    color: var(--md-heading-main-color);
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+/* Change the color of category headings */
+.md-typeset h2 {
+  color: var(--md-category-headings-color);
+    font-size: x-large;
+    /*font-weight: bolder;*/
+    /*border-bottom-style: solid;*/
+    /*border-bottom-width: 1px;*/
+    /*border-bottom-color: var(--md-heading-bottom-border-color);*/
+}
+
+.md-typeset h5.doc.doc-heading {
+  color: var(--md-doc-heading-color);
+}
+
+/*.md-typeset .abstract {*/
+/*    background-color: var(--md-abstract-bg-color);*/
+/*}*/
