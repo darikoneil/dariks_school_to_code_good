@@ -8,9 +8,9 @@ nav:
     - Home: index.md
     - Chapters:
         - Preface:
-            IDEs: lessons/preface/ides.md
-            Virtual Environments: lessons/preface/venv.md
-            Documentation: lessons/preface/docs.md
+            - IDEs: lessons/preface/ides.md
+            - Virtual Environments: lessons/preface/venv.md
+            - Documentation: lessons/preface/docs.md
         - Introduction:
             - What is Programming?: lessons/introduction/what_is_programming.md
             - Programming Matters: lessons/introduction/programming_matters.md
@@ -50,22 +50,22 @@ nav:
             - Libraries and Packages: lessons/7_modules/libraries_and_packages.md
             - Importing: lessons/7_modules/importing.md
         - Git:
-            - Version Control Basics: lessons/11_git/version_control_basics.md
-            - Branching and Merging: lessons/11_git/branching_and_merging.md
+            - Version Control Basics: lessons/8_git/version_control_basics.md
+            - Branching and Merging: lessons/8_git/branching_and_merging.md
         - Debugging:
-            - Error Types: lessons/8_debugging/error_types.md
-            - Exception & Error Handling: lessons/8_debugging/exception_and_error_handling.md
-            - Debugging Tools: lessons/8_debugging/debugging_tools.md
-            - Linting and Static Analysis: lessons/8_debugging/linting_and_static_analysis.md
+            - Error Types: lessons/9_debugging/error_types.md
+            - Exception & Error Handling: lessons/9_debugging/exception_and_error_handling.md
+            - Debugging Tools: lessons/9_debugging/debugging_tools.md
+            - Linting and Static Analysis: lessons/9_debugging/linting_and_static_analysis.md
         - Testing:
             - Unit Testing: lessons/10_testing/unit_testing.md
             - Integration Testing: lessons/10_testing/integration_testing.md
             - Test-Driven Development: lessons/10_testing/test_driven_development.md
         - Advanced Topics:
-            - Recursion: lessons/12_advanced_topics/recursion.md
-            - Functional Programming: lessons/12_advanced_topics/functional_programming.md
-            - Concurrency: lessons/12_advanced_topics/concurrency.md
-            - Memory Management: lessons/12_advanced_topics/memory_management.md
+            - Recursion: lessons/11_advanced_topics/recursion.md
+            - Functional Programming: lessons/11_advanced_topics/functional_programming.md
+            - Concurrency: lessons/11_advanced_topics/concurrency.md
+            - Memory Management: lessons/11_advanced_topics/memory_management.md
     - About: about.md
     - Resources: resources.md
     - Contact: contact.md
