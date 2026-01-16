@@ -39,7 +39,7 @@ nav:
             - Lists: lessons/5_data_structures/lists.md
             - Tuples: lessons/5_data_structures/tuples.md
             - Arrays: lessons/5_data_structures/arrays.md
-            - Hash Map : lessons/5_data_structures/hash_map.md
+            - Hash Map: lessons/5_data_structures/hash_map.md
             - Sets: lessons/5_data_structures/sets.md
         - Classes & Objects:
             - Defining Classes: lessons/6_classes/defining_classes.md
