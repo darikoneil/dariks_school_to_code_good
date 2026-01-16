@@ -11,6 +11,7 @@ think  in rich, ambiguous concepts. Programming languages exist to bridge this g
 they allow humans to express precise procedures in a form that machines can execute.
 
 Every programming language is a compromise between various factors, including:
+
     - Abstractness: how much detail is hidden from the programmer
     - Readability: how easily humans can understand the code
     - Expressiveness: how easily we can represent complex ideas

@@ -173,3 +173,8 @@ skip-magic-trailing-comma = false  # Black Compatibility
 line-ending = "auto"  # Black Compatibility
 docstring-code-format = true  # Auto-formatting of code examples in docstrings
 docstring-code-line-length = "dynamic"  # Line length for code examples in docstrings
+
+[tool.uv.workspace]
+members = [
+    "dariks_project",
+]
