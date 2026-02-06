@@ -12,6 +12,55 @@ come in several categories: arithmetic, comparison, logical, bitwise, and assign
 Understanding operator precedence (which operation runs first) and associativity 
 (left/right) helps avoid subtle bugs; use parentheses to make intent explicit.
 
+## Operator categories
+Below are common categories of operators you will encounter. Each category describes
+what the operators do and gives short examples — language syntax varies, but the
+concepts are the same.
+
+- Basic math (arithmetic)
+  - Purpose: perform numeric calculations (addition, subtraction, multiplication,
+    division, modulus, exponentiation).
+  - Examples: `+`, `-`, `*`, `/`, `//` (floor division, language-specific), `%`, `**`.
+  - Notes: some languages distinguish integer vs floating division; some have
+    special operators for matrix or element-wise operations.
+
+- Assignment
+  - Purpose: store a value into a variable.
+  - Examples: `=` (simple assignment), and related forms below.
+
+- Augmented assignment
+  - Purpose: combine an operation with assignment for conciseness and sometimes
+    performance.
+  - Examples: `+=`, `-=`, `*=`, `/=`, `//=`, `%=`. Equivalent to `x = x + y` but
+    shorter and, in some languages, may avoid extra temporaries.
+
+- Logical
+  - Purpose: combine or invert boolean values.
+  - Examples: `and`, `or`, `not` (language-specific), sometimes `&&`, `||`, `!`.
+  - Notes: logical operators may short-circuit (skip evaluating the right-hand
+    side) in many languages — this is important when the right-hand side has
+    side effects or expensive computations.
+
+- Bitwise
+  - Purpose: operate on individual bits of integer values.
+  - Examples: `&` (and), `|` (or), `^` (xor), `~` (not), `<<` (left shift), `>>` (right shift).
+  - Notes: bitwise operators behave differently from logical operators and do not
+    short-circuit; they are useful in low-level programming and some numeric tricks.
+
+- Membership and identity (where applicable)
+  - Purpose: test whether a value is contained in a collection (membership) or whether
+    two references are the same object (identity).
+  - Examples: `in`, `not in`, `is`, `is not` (Python); other languages have
+    similar constructs or library functions.
+
+- Precedence and associativity
+  - Purpose: determine the order in which operators are applied when several appear
+    in one expression.
+  - Notes: multiplication has higher precedence than addition in most languages
+    (`1 + 2 * 3 == 7`), and parentheses `()` override precedence. When in doubt,
+    use parentheses to make intent explicit.
+
+
 === "Python"
 
     ```python

@@ -20,9 +20,10 @@ over time (dynamic typing).
 
     - Putting dough into a bowl = assigning a value to a variable.
     - Moving the label to a different bowl = rebinding the variable to a new value.
-    - Scooping dough into a new bowl = copying a value (shallow or deep copy).
-    - Two labels on the same bowl = two variables referencing the same mutable object;  
-    changing the dough through one label affects the other.
+    - Scooping dough into a new bowl = "shallow" copying a value.
+    - Replicating the dough in a new bowl = "deep" copying a value.
+    - Two labels on the same bowl = two variables referencing the same mutable 
+    object = changing the dough through one label changes both variables.
 
 
 === "Python"

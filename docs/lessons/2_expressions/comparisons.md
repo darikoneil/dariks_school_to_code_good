@@ -22,6 +22,12 @@ Common comparison operators:
 - 'in'  membership test (Python only)
 - ':=' assignment (not a comparison, but often confused with `==`)
 
+- Comparison
+  - Purpose: compare two values and produce a boolean result.
+  - Examples: `==`, `!=` (or `~=`), `<`, `<=`, `>`, `>=`.
+  - Notes: comparison operators are used in conditionals and filtering.
+
+
 === "Python"
 
     ```python
