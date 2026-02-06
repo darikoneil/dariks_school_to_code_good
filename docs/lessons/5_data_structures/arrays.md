@@ -45,9 +45,3 @@ Matlab uses arrays (matrices) as its core data structure.
 - Numpy arrays enforce homogeneous types; mixing types will coerce to a common type.
 - Matlab is 1-based indexing; Python/NumPy are 0-based.
 - Be careful with shapes (row vs column) when multiplying matrices.
-
-## Exercises
-1. Create a 3x3 identity matrix in Matlab and in NumPy.
-2. In Python with NumPy, compute the element-wise product of two arrays.
-3. Demonstrate shape mismatch error when attempting to add arrays of incompatible shapes.
-

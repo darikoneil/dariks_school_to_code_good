@@ -25,8 +25,3 @@ flake8 path/to/file.py
 
 ## Interpreting Warnings
 Not all warnings are errors — assess severity and fix relevant issues. Configure tool rules to match project preferences.
-
-## Exercises
-1. Run `flake8` on a small Python file and fix three reported issues.
-2. Add `mypy` type hints to a function and demonstrate fixing a type mismatch reported by `mypy`.
-

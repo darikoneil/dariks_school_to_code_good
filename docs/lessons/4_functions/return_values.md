@@ -48,9 +48,3 @@ values (vs. mutating inputs or printing) is key to writing reusable code.
 - Returning mutable objects vs copying: returning a reference to a mutable object may allow callers to mutate internal state.
 - Implicit `None` (Python) or no output (Matlab) can confuse callers expecting a value — document return types.
 - Multiple outputs (Matlab) vs tuple unpacking (Python) have slightly different calling conventions.
-
-## Exercises
-1. Write a Python function that returns the maximum of three numbers.
-2. In Matlab, write a function that returns both the mean and median of an input vector.
-3. Show with Python code that a function that prints but does not return will yield `None` when assigned.
-

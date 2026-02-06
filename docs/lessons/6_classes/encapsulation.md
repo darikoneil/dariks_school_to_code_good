@@ -48,9 +48,3 @@ from depending on internal representation and helps maintain invariants.
 - Python's privacy is by convention (`_` vs `__` name mangling) — it does not enforce access.
 - Use property getters/setters when you need to validate assignments or compute values on access.
 - In Matlab, `Access = private` enforces visibility rules more strictly.
-
-## Exercises
-1. Implement a `BankAccount` class in Python with a private balance and deposit/withdraw methods.
-2. Add validation to prevent withdrawing more than the balance.
-3. In Matlab, declare a private property and provide public getters/setters.
-

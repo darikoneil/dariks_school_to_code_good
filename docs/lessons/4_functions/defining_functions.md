@@ -45,9 +45,3 @@ They improve readability, avoid repetition, and make testing simpler.
 - In Python, functions are first-class values (they can be passed around and assigned).
 - Matlab functions usually live in their own files or as local/subfunctions; be aware of file naming conventions.
 - Keep functions small and focused — prefer many small functions to one large function.
-
-## Exercises
-1. Write a Python function `square(x)` that returns x squared.
-2. Write a Matlab function that takes a vector and returns its mean and standard deviation.
-3. In Python, add a docstring to a function and show how to access it with `help()`.
-

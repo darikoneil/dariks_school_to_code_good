@@ -36,8 +36,3 @@ git push -u origin main
 ## Gotchas
 - Commits are local until pushed to a remote.
 - Rewriting published history (git rebase --force) can disrupt collaborators.
-
-## Exercises
-1. Initialize a local git repository in a new folder, create two commits, and inspect the commit history with `git log`.
-2. Explain the difference between `git add` and `git commit` in one sentence.
-

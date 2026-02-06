@@ -24,8 +24,3 @@ filtered = list(filter(lambda x: x % 2 == 1, nums))
 
 ## When to Use FP
 FP makes reasoning about code easier and is useful for parallelism, but sometimes imperative code is clearer for simple tasks.
-
-## Exercises
-1. Refactor an imperative loop that computes squares into a functional pipeline using `map`.
-2. Write a pure function that returns a new list with duplicates removed without mutating the input.
-

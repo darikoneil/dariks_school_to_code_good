@@ -17,6 +17,10 @@ Common comparison operators:
 - `>`   greater than
 - `<=`  less than or equal to
 - `>=`  greater than or equal to
+- 'is'  identity comparison (Python only)
+- 'is not'  identity negation (Python only)
+- 'in'  membership test (Python only)
+- ':=' assignment (not a comparison, but often confused with `==`)
 
 === "Python"
 
@@ -64,13 +68,12 @@ Common comparison operators:
     ```
 
 ## Gotchas
-- Floating-point comparisons: exact equality is fragile (e.g., `0.1 + 0.2 == 0.3` may be False). Prefer a tolerance (abs(a-b) < eps).
-- Identity vs equality: `is` (Python) checks object identity, not value equality.
-- Chained comparisons are evaluated left-to-right but are concise and useful; beware when mixing side-effecting expressions.
-- Type coercion: some languages coerce types during comparison (Python treats bools as ints; other languages differ).
-- Array comparisons: in Matlab and NumPy, comparisons on arrays produce element-wise boolean arrays — make sure to reduce with `all()`/`any()` when needed.
-
-## Exercises
-1. Write a Python expression that checks whether a number `n` is between 10 and 20 (inclusive) using a single chained comparison.
-2. In Python, compare `0.1 + 0.2` to `0.3` using an absolute tolerance of 1e-9 and print whether they are "close".
-3. In Matlab, given `A = [2 4 6]` and `B = [1 4 7]`, write an expression that returns which elements of `A` are equal to `B`.
+1. **Floating-point comparisons**: exact equality is fragile (e.g., `0.1 + 0.2 == 0.3` 
+   may be False). Prefer a tolerance (abs(a-b) < eps).
+2. **Identity vs equality**: `is` (Python) checks object identity, not value equality.
+3. **Chained comparisons**: are evaluated left-to-right but are concise and useful; 
+   beware when mixing side-effecting expressions.
+4. **Type coercion**: some languages coerce types during comparison (Python treats 
+   bools as ints; other languages differ).
+5. **Array comparisons**: in Matlab and NumPy, comparisons on arrays produce 
+   element-wise boolean arrays — make sure to reduce with `all()`/`any()` when needed.

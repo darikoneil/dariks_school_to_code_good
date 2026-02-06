@@ -53,9 +53,3 @@ Understanding local vs global scope, closures, and lifetime (especially for reso
 - Overusing globals leads to fragile code and hard-to-track bugs.
 - Mutable objects referenced in closures can produce surprising results if mutated after closure creation.
 - Resource lifetime: open files/sockets should be closed; prefer context managers (Python `with`) or `onCleanup` in Matlab.
-
-## Exercises
-1. In Python, write a closure that multiplies by a captured factor and show it works.
-2. Demonstrate modifying a global variable inside a function (Python) using the `global` keyword.
-3. In Matlab, show how to use `onCleanup` or explicitly close files opened with `fopen`.
-

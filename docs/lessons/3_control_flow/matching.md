@@ -78,8 +78,3 @@ many distinct cases, and modern languages (Python 3.10+) support structural patt
 - Patterns can capture variables; be careful about accidental captures.
 - Matlab `switch` tests values for equality; it is not structural matching. For complex patterns, combine `if`/`elseif` with `isequal` or use a dispatch table.
 - Overusing `match`/`switch` for complex logic can make code harder to test — prefer small functions per case.
-
-## Exercises
-1. Write a Python `match` block that handles commands `start`, `stop`, and any other command (print appropriate messages).
-2. Using Python structural matching, write a match that recognizes a 2-tuple `(x, y)` and prints the coordinates, or prints "origin" for `(0, 0)`.
-3. In Matlab, implement a `switch` that dispatches on string commands and falls back to a default message. As an extension, implement the same dispatch using a `containers.Map` of function handles.

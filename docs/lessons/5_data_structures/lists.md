@@ -57,9 +57,3 @@ They are useful when you need an indexed, iterable container that can grow or sh
 - Slicing in Python creates a shallow copy; modifying the slice doesn't change the original list.
 - Matlab vectors are 1-based and are arrays by default; use cell arrays `{}` for heterogeneous collections.
 - Avoid using mutable objects as default function arguments in Python.
-
-## Exercises
-1. Create a Python list of the first 10 positive integers and compute their sum using a loop.
-2. Write a list comprehension that produces the even numbers from 0 to 20.
-3. In Matlab, create a row vector of `[1 2 3 4 5]` and extract the middle three elements.
-

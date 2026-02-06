@@ -22,8 +22,3 @@ A test might start a test database, run a function that writes data, then query 
 ## Gotchas
 - Avoid running slow integration tests repeatedly; separate them in CI.
 - Networked services add flakiness — use local test doubles or containers.
-
-## Exercises
-1. Outline an integration test for a function that writes a user record to a database and sends a notification.
-2. Describe how you'd isolate tests that depend on external APIs.
-

@@ -50,9 +50,3 @@ by key. They are ideal for mapping names to values, counting, and grouping data.
 - Keys must be hashable (immutable) in Python; lists cannot be keys but tuples can.
 - Order: Python 3.7+ preserves insertion order for dicts, but don't rely on it for logic unless intended.
 - Matlab `containers.Map` requires matching key/value cell arrays for construction and may be slower than native arrays for numeric-heavy code.
-
-## Exercises
-1. Use a Python dictionary to count word frequencies in a short sentence.
-2. In Matlab, create a `containers.Map` that maps strings to function handles and call one.
-3. In Python, show how to safely access a possibly-missing key with `get` and with `try/except`.
-

@@ -164,12 +164,6 @@ Quick note: In Python the assignment statement does not itself yield a value. Th
         return  # early exit keeps the happy path unindented
     ```
 
-## Small exercises
-
-1. Write a function that iterates over a list and returns the first even number; return `None` if there is none.
-2. Explain the difference between `x = x + 1` and `x += 1` in terms of semantics and potential pitfalls with mutable objects.
-3. Convert a small `if/else` block into a ternary expression in a language that supports it; discuss readability tradeoffs.
-
 ## Links and further reading
 
 - See `../../lessons/2_expressions/fundamentals.md` for the expressions overview (short contrast between expressions and statements).

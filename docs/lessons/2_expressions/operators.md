@@ -9,8 +9,8 @@ lesson_number: 2
 Operators combine values and produce new values. They are the core of expressions and
 come in several categories: arithmetic, comparison, logical, bitwise, and assignment.
 
-Understanding operator precedence (which operation runs first) and associativity (left/right)
-helps avoid subtle bugs; use parentheses to make intent explicit.
+Understanding operator precedence (which operation runs first) and associativity 
+(left/right) helps avoid subtle bugs; use parentheses to make intent explicit.
 
 === "Python"
 
@@ -72,12 +72,13 @@ helps avoid subtle bugs; use parentheses to make intent explicit.
     ```
 
 ## Gotchas
-- Division differences: Python `/` always produces a float; `//` is floor division. Matlab `/` and `\` relate to matrix right- and left-division (they are not simple scalar integer divisions).
-- Element-wise vs matrix operations: Matlab distinguishes `*` (matrix multiply) from `.*` (element-wise). A common bug is mixing them when operating on arrays.
-- Short-circuiting: `and`/`or` in Python short-circuit (right-hand side may not be evaluated); bitwise operators `&`/`|` do not short-circuit and operate on bits or element-wise booleans (NumPy).
-- Operator precedence can be surprising; parentheses improve readability and correctness.
-
-## Exercises
-1. In Python, compute ((2 + 3) * 4) ** 2 and explain each step of precedence.
-2. In Matlab, given `A = [1 2; 3 4]`, compute element-wise square and matrix square and compare the results.
-3. Write a short Python loop that uses `+=` to accumulate a running total of numbers 1 through 10.
+1. **Division differences**: Python `/` always produces a float; `//` is floor 
+   division.  Matlab `/` and `\` relate to matrix right- and left-division  (they 
+   are not simple scalar integer divisions).
+2. **Element-wise vs matrix operations**: Matlab distinguishes `*` (matrix multiply) 
+   from `.*` (element-wise). A common bug is mixing them when operating on arrays.
+3. **Short-circuiting**: `and`/`or` in Python short-circuit (right-hand side may not 
+   be  evaluated); bitwise operators `&`/`|` do not short-circuit and operate on 
+   bits or element-wise booleans (NumPy).
+4. **Operator precedence** can be surprising; parentheses improve readability and 
+   correctness.

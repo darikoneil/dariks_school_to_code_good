@@ -34,9 +34,3 @@ Tracebacks show the call stack and the error message. Read from the bottom up to
 
 ## Gotchas
 - Catching too broad an exception (e.g., bare `except:`) can hide bugs.
-- Off-by-one errors are a common semantic mistake.
-
-## Exercises
-1. Classify three short snippets as syntax, runtime, or semantic errors.
-2. Run a snippet that raises `IndexError` and practice reading the traceback to find the failing line.
-

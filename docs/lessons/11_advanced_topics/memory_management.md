@@ -25,8 +25,3 @@ print(tracemalloc.get_traced_memory())
 - Long-lived caches holding references
 - Global variables
 - Detached cycles not reclaimed until GC runs
-
-## Exercises
-1. Use `tracemalloc` to identify a function that increases peak memory and refactor it to reduce allocations.
-2. Explain how reference cycles can prevent timely resource release and how to break them.
-

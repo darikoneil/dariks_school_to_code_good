@@ -24,8 +24,3 @@ def factorial(n):
 
 ## Limits and Tail Recursion
 Python has a recursion depth limit; tail-call optimization is not performed by CPython.
-
-## Exercises
-1. Implement a recursive and iterative version of factorial and compare behavior for small inputs.
-2. Write a recursive function to compute Fibonacci numbers and discuss its performance characteristics.
-

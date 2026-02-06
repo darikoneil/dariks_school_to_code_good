@@ -41,9 +41,3 @@ membership tests, and set operations (union, intersection, difference).
 - Sets are unordered; you cannot rely on iteration order.
 - Elements must be hashable/eligible for set membership (immutable) in Python.
 - Matlab set functions work on arrays and return sorted unique results.
-
-## Exercises
-1. Use a Python set to remove duplicates from a list.
-2. Compute the intersection of two arrays in Matlab and return the unique common elements.
-3. In Python, show how to use set comprehension to build a set of squares of numbers 0..9.
-

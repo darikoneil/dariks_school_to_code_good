@@ -34,9 +34,3 @@ how multiple instances maintain independent state.
 - Beware of shared mutable defaults if class-level objects are used as defaults.
 - Constructors should validate inputs and establish invariants.
 - In some languages, object creation may be expensive; consider factory functions or pooling for hot paths.
-
-## Exercises
-1. Instantiate several objects from a custom class and demonstrate they maintain separate state.
-2. Add input validation to a constructor (e.g., coordinates must be numeric).
-3. In Python, show what happens when you set a mutable class attribute and then mutate it from one instance.
-

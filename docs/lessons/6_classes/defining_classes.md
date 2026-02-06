@@ -50,9 +50,3 @@ and hold their own state. Object-oriented design helps model real-world concepts
 - Remember to initialize instance state (Python `__init__`, Matlab constructor).
 - Be explicit about `self` / returning modified objects (Matlab methods often return the modified object for value-like semantics).
 - Keep classes focused; don't cram unrelated behavior into a single class.
-
-## Exercises
-1. Define a `Point` class with `x` and `y`, create an instance, and move it.
-2. Override `__repr__` in Python to show a readable representation.
-3. In Matlab, create a simple class with a method and instantiate it.
-

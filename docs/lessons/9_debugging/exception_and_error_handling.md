@@ -43,8 +43,3 @@ raise ValidationError("bad input")
 - Catch specific exception types.
 - Log errors with context.
 - Use `finally` or context managers for cleanup.
-
-## Exercises
-1. Wrap a file open and parse operation in try/except and return a default value on failure.
-2. Define a custom exception `ConfigurationError` and raise it when a required setting is missing.
-

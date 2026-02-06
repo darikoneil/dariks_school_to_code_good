@@ -31,8 +31,3 @@ logging.info("starting")
 ## IDE and Browser Tools
 - IDEs (PyCharm, VS Code) provide visual breakpoints and variable watches.
 - Browser devtools help debug front-end JavaScript.
-
-## Exercises
-1. Use a debugger to step through a function that computes the nth Fibonacci number and observe variable evolution.
-2. Replace a set of print statements with Python logging and demonstrate changing the log level.
-

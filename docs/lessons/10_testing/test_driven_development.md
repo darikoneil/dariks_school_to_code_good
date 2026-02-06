@@ -21,8 +21,3 @@ TDD is a development workflow where you write tests before implementing function
 - Write `assert add([1,2]) == 3` (failing).
 - Implement `def add(items): return sum(items)`.
 - Refactor to handle edge cases and keep tests green.
-
-## Exercises
-1. Use one TDD cycle to implement a function that returns the largest number in a list.
-2. Discuss a case where TDD might lead to brittle design and how to mitigate it.
-

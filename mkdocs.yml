@@ -22,7 +22,6 @@ nav:
             - Booleans: lessons/1_data_types/booleans.md
         - Expressions:
             - Fundamentals: lessons/2_expressions/fundamentals.md
-            - Literals: lessons/2_expressions/literals.md
             - Variables: lessons/2_expressions/variables.md
             - Operators: lessons/2_expressions/operators.md
             - Comparisons: lessons/2_expressions/comparisons.md

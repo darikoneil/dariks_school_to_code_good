@@ -50,8 +50,3 @@ git rebase main
 ```
 
 Use rebase to keep history linear for private branches; avoid rebasing public/shared branches.
-
-## Exercises
-1. Create a branch `experiment`, make a change in it, merge it into `main`, and inspect history with `git log --oneline --graph`.
-2. Simulate a simple conflict by changing the same line in `main` and a branch, then resolve the conflict and complete the merge.
-

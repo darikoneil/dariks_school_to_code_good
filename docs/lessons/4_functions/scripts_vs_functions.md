@@ -41,9 +41,3 @@ scripts for simple one-off tasks or as program entrypoints.
 - In Python, top-level code runs on import; guard execution with `if __name__ == '__main__'`.
 - Matlab scripts operate in the base workspace and can unintentionally overwrite variables; prefer functions for reusable code.
 - Use functions for unit-testable logic and scripts for orchestration.
-
-## Exercises
-1. Convert a small script that prints numbers 1..5 into a function that returns a list of those numbers.
-2. Write a Python module with a `main()` function and the `if __name__ == '__main__'` guard.
-3. In Matlab, show how a variable defined in a script becomes visible in the base workspace but remains local in a function.
-

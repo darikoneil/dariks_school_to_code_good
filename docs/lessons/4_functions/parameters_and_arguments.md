@@ -44,9 +44,3 @@ Understanding positional, keyword (named), default, and variadic parameters make
 - Default parameter values in Python are evaluated once; avoid mutable defaults.
 - Matlab does not have keyword arguments by default; name-value pairs are passed as varargin and parsed manually.
 - Be explicit about parameter types and document expected shapes for array inputs.
-
-## Exercises
-1. Write a Python function with a default mutable argument and fix it using `None`.
-2. Create a Python function that accepts `*args` and returns their product.
-3. In Matlab, write a function that accepts variable inputs and prints how many extra arguments were provided.
-

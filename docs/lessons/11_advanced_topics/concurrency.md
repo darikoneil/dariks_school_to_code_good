@@ -30,8 +30,3 @@ def worker():
         with lock:
             counter += 1
 ```
-
-## Exercises
-1. Create a race condition with a shared counter updated by multiple threads, then fix it with a lock.
-2. Rewrite a blocking I/O loop to use `asyncio` and `await`.
-

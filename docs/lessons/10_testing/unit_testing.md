@@ -33,8 +33,3 @@ pytest -q
 ## Gotchas
 - Tests that depend on external services are brittle (use mocks).
 - Flaky tests (time-dependent, order-dependent) reduce confidence.
-
-## Exercises
-1. Write unit tests for a `divide(a, b)` function, including a test for division by zero using pytest's `raises`.
-2. Convert a simple class into testable pieces and write tests for its public methods.
-

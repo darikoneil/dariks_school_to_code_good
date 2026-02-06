@@ -87,8 +87,3 @@ Conditionals use boolean expressions (see the Comparisons lesson) and short-circ
 - In Matlab `=` is assignment and `==` is comparison; accidentally using `=` in a conditional will error or assign.
 - Truthiness: empty containers are Falsey in Python, and `isempty` is the usual check in Matlab.
 - Order matters in `elif`/`elseif` chains — the first matching branch runs.
-
-## Exercises
-1. Write a Python function that returns "even" or "odd" for an integer input using an `if`/`else`.
-2. In Python, write an `if`/`elif`/`else` that labels an integer as "negative", "zero", or "positive".
-3. In Matlab, write a conditional that prints "small", "medium", or "large" for values less than 10, between 10 and 100 (inclusive), and greater than 100.

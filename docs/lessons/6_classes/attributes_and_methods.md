@@ -48,9 +48,3 @@ state and class attributes for shared data.
 - Access class attributes via the class name or `self.__class__` to avoid accidental shadowing.
 - In Matlab, class properties have attributes (like `Constant`) that change their behavior.
 - Avoid large mutable class-level defaults unless intentionally shared.
-
-## Exercises
-1. Create a `Counter` class and demonstrate class vs instance attributes.
-2. Add a `reset` method that sets the counter back to zero.
-3. In Matlab, declare a read-only property using appropriate attributes.
-
